@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:id="@+id/heading"
+        android:text="Unit Converter"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="58dp"
+        android:id="@+id/meter"
+        android:layout_below="@id/heading"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="value in meter:"
+        android:textSize="25dp" />
+
+    <EditText
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:id="@+id/edtNo"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        android:inputType="numberDecimal"
+        android:hint="number"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="58dp"
+        android:id="@+id/btn"
+        android:text="CONVERT"
+        android:layout_below="@id/meter"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+
+        />
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="65dp"
+        android:id="@+id/cm"
+        android:text="Corresponding value in centimeter:"
+        android:layout_below="@id/btn"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+       />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/cm"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
